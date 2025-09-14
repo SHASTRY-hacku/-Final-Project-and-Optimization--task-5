@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VOLT-HUB — Premium Electronics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  </head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar transparent">
+    <div class="container nav-inner">
+      <div class="hamburger">VOLT-HUB</div>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#cart">Cart</a>
+        <a href="#contact">Contact</a>
+        <a href="portfolio/index.html">Portfolio</a>
+        <a href="#admin">Admin</a>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO / BANNER -->
+  <section id="home" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1 class="hero-title">Power your world with next‑gen electronics</h1>
+      <p class="hero-subtitle">Curated devices. Trusted brands. Fast delivery.</p>
+      <div class="cta-row">
+        <button class="btn btn-3d primary" onclick="welcomeMessage()">Start Shopping</button>
+        <a href="#products" class="btn btn-ghost">Browse Products</a>
+      </div>
+      <div class="hero-stats fade-in">
+        <div class="stat">
+          <span class="num">10+</span>
+          <span class="label">Top Categories</span>
+        </div>
+        <div class="stat">
+          <span class="num">4.8★</span>
+          <span class="label">Customer Rating</span>
+        </div>
+        <div class="stat">
+          <span class="num">24/7</span>
+          <span class="label">Support</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMAGE CAROUSEL -->
+<section id="carousel" class="section">
+  <div class="container">
+    <h2 class="section-title fade-in">Product Highlights</h2>
+    <div class="carousel">
+      <button class="carousel-btn prev">‹</button>
+      <div class="carousel-track">
+        <img src="images/banner1.webp" alt="Banner 1">
+        <img src="images/banner2.jpg" alt="Banner 2">
+        <img src="images/banner3.png" alt="Banner 3">
+      </div>
+      <button class="carousel-btn next">›</button>
+    </div>
+  </div>
+</section>
+
+
+  <main>
+    <!-- PRODUCTS -->
+    <section id="products" class="section">
+      <div class="container">
+        <h2 class="section-title fade-in">Featured Products</h2>
+        <div class="product-grid">
+          <div class="product fade-in" data-price="30000">
+            <div class="product-media">
+              <img src="images/LED.avif" alt="LED TV">
+            </div>
+            <h3>LED TV</h3>
+            <p>Smart 4K HDR LED TV with immersive audio.</p>
+            <div class="product-foot">
+              <span class="price">₹30,000</span>
+              <button class="btn btn-3d success buyBtn">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product fade-in" data-price="8000">
+            <div class="product-media">
+              <img src="images/MICROWAVE OVEN.jpeg" alt="Microwave Oven">
+            </div>
+            <h3>Microwave Oven</h3>
+            <p>Compact microwave with auto-cook presets.</p>
+            <div class="product-foot">
+              <span class="price">₹8,000</span>
+              <button class="btn btn-3d success buyBtn">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product fade-in" data-price="25000">
+            <div class="product-media">
+              <img src="images/REFRIGERATOR.webp" alt="Refrigerator">
+            </div>
+            <h3>Refrigerator</h3>
+            <p>Energy-efficient double-door with fast cool.</p>
+            <div class="product-foot">
+              <span class="price">₹25,000</span>
+              <button class="btn btn-3d success buyBtn">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product fade-in" data-price="15000">
+            <div class="product-media">
+              <img src="images/WASHING MACHINE.webp" alt="Washing Machine">
+            </div>
+            <h3>Washing Machine</h3>
+            <p>Automatic washer with eco & quick modes.</p>
+            <div class="product-foot">
+              <span class="price">₹15,000</span>
+              <button class="btn btn-3d success buyBtn">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product fade-in" data-price="50000">
+            <div class="product-media">
+              <img src="images/LAPTOP.webp" alt="Laptop">
+            </div>
+            <h3>Laptop</h3>
+            <p>Thin & light performance for work and play.</p>
+            <div class="product-foot">
+              <span class="price">₹50,000</span>
+              <button class="btn btn-3d success buyBtn">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product fade-in" data-price="20000">
+            <div class="product-media">
+              <img src="images/SMARTPHONE.webp" alt="Smartphone">
+            </div>
+            <h3>Smartphone</h3>
+            <p>Flagship camera with blazing fast processor.</p>
+            <div class="product-foot">
+              <span class="price">₹20,000</span>
+              <button class="btn btn-3d success buyBtn">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product fade-in" data-price="4000">
+            <div class="product-media">
+              <img src="images/HEADPHONE.webp" alt="Headphones">
+            </div>
+            <h3>Headphones</h3>
+            <p>Wireless ANC with deep bass and comfort.</p>
+            <div class="product-foot">
+              <span class="price">₹4,000</span>
+              <button class="btn btn-3d success buyBtn">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product fade-in" data-price="12000">
+            <div class="product-media">
+              <img src="images/SMARTWATCH.webp" alt="Smartwatch">
+            </div>
+            <h3>Smartwatch</h3>
+            <p>All-day health monitoring and GPS.</p>
+            <div class="product-foot">
+              <span class="price">₹12,000</span>
+              <button class="btn btn-3d success buyBtn">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product fade-in" data-price="35000">
+            <div class="product-media">
+              <img src="images/AIR CONDITIONER.webp" alt="Air Conditioner">
+            </div>
+            <h3>Air Conditioner</h3>
+            <p>Inverter split AC for efficient cooling.</p>
+            <div class="product-foot">
+              <span class="price">₹35,000</span>
+              <button class="btn btn-3d success buyBtn">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product fade-in" data-price="45000">
+            <div class="product-media">
+              <img src="images/GAMING CONSOLE.webp" alt="Gaming Console">
+            </div>
+            <h3>Gaming Console</h3>
+            <p>Next‑gen 4K gaming, ultra-fast loading.</p>
+            <div class="product-foot">
+              <span class="price">₹45,000</span>
+              <button class="btn btn-3d success buyBtn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CART -->
+    <section id="cart" class="section">
+      <div class="container">
+        <h2 class="section-title fade-in">Your Cart</h2>
+        <div class="cart-card fade-in">
+          <ul id="cartList" class="cart-list"></ul>
+          <p id="emptyCart" class="muted">Your cart is empty.</p>
+          <div class="cart-total-row">
+            <h3 id="total">Total: ₹0</h3>
+            <button id="checkoutBtn" class="btn btn-3d primary">Proceed to Checkout</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+   <!-- ADMIN (Add product) -->
+    <section id="admin" class="section">
+      <div class="container">
+        <h2 class="section-title fade-in">Admin</h2>
+        <div class="cart-card fade-in">
+          <form id="addProductForm" class="contact-form">
+            <div class="form-group">
+              <label for="pName">Title</label>
+              <input id="pName" required />
+            </div>
+            <div class="form-group">
+              <label for="pDesc">Description</label>
+              <input id="pDesc" required />
+            </div>
+            <div class="form-group">
+              <label for="pCategory">Category</label>
+              <input id="pCategory" placeholder="e.g. Accessories" required />
+            </div>
+            <div class="form-group">
+              <label for="pPrice">Price (number)</label>
+              <input id="pPrice" type="number" min="0" required />
+            </div>
+            <div class="form-group">
+              <label for="pRating">Rating (0 - 5)</label>
+              <input id="pRating" type="number" min="0" max="5" step="0.1" value="4.0" required />
+            </div>
+            <div class="form-group">
+              <label for="pImage">Image Path (relative)</label>
+              <input id="pImage" placeholder="images/SMARTPHONE.webp" required />
+            </div>
+            <button class="btn btn-3d primary" type="submit">Add Product</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+      <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title fade-in">Contact Us</h2>
+        <form class="contact-form fade-in">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-3d primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+        <!-- TO-DO LIST -->
+    <section id="todo" class="section">
+      <div class="container">
+        <h2 class="section-title fade-in">My To-Do List</h2>
+        <div class="todo-card fade-in">
+          <form id="todoForm" class="todo-form">
+            <input type="text" id="todoInput" placeholder="Enter a new task..." required>
+            <button type="submit" class="btn btn-3d primary">Add Task</button>
+          </form>
+          <ul id="todoList" class="todo-list"></ul>
+          <p id="taskCounter" class="muted" style="margin-top:10px;">0 tasks left</p>
+          <button id="clearCompleted" class="btn btn-3d success" style="margin-top:12px;">
+            Clear All Completed
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+        <!-- IMAGE GALLERY -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <h2 class="section-title fade-in">Image Gallery</h2>
+        <div class="gallery-card fade-in">
+          <form id="galleryForm" class="gallery-form">
+            <input type="url" id="imageUrl" placeholder="Enter image URL..." required>
+            <input type="file" id="imageFile" accept="image/*">
+            <button type="submit" class="btn btn-3d primary">Add Image</button>
+          </form>
+          <div id="galleryGrid" class="gallery-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUIZ SECTION -->
+<section id="quiz" class="section">
+  <div class="container">
+    <h2 class="section-title fade-in">Test Your Knowledge</h2>
+    <div class="quiz-card fade-in">
+      <div id="quizContainer"></div>
+      <button id="nextBtn" class="btn btn-3d primary" style="margin-top:15px;">Next</button>
+      <p id="quizResult" class="muted" style="margin-top:10px; font-weight:600;"></p>
+    </div>
+  </div>
+</section>
+
+<!-- JOKE SECTION -->
+<section id="joke" class="section">
+  <div class="container">
+    <h2 class="section-title fade-in">Need a Laugh?</h2>
+    <div class="joke-card fade-in">
+      <p id="jokeText" class="muted">Click the button to get a joke!</p>
+      <button id="jokeBtn" class="btn btn-3d primary" style="margin-top:15px;">
+        Get a Joke
+      </button>
+    </div>
+  </div>
+</section>
+<!-- FILTERS & SORT -->
+        <div class="filter-sort fade-in" id="filterSortBar">
+          <div class="left-controls">
+            <label class="control">
+              Search:
+              <input id="searchInput" type="search" placeholder="Search products..." />
+            </label>
+
+            <label class="control">
+              Category:
+              <select id="categoryFilter">
+                <option value="all">All</option>
+                <option value="TV">TV</option>
+                <option value="Laptop">Laptop</option>
+                <option value="Smartphone">Smartphone</option>
+                <option value="Appliances">Appliances</option>
+                <option value="Accessories">Accessories</option>
+                <option value="Gaming">Gaming</option>
+              </select>
+            </label>
+
+            <label class="control">
+              Max Price:
+              <input id="priceFilter" type="number" placeholder="e.g. 30000" min="0" />
+            </label>
+
+            <label class="control range-control">
+              Min Rating:
+              <input id="ratingFilter" type="range" min="0" max="5" step="0.1" value="0"/>
+              <span id="ratingValue">0</span>★
+            </label>
+
+            <button id="clearFilters" class="btn btn-ghost small">Clear Filters</button>
+          </div>
+
+          <div class="right-controls">
+            <label class="control">
+              Sort:
+              <select id="sortSelect">
+                <option value="default">Default</option>
+                <option value="lowHigh">Price: Low → High</option>
+                <option value="highLow">Price: High → Low</option>
+                <option value="nameAZ">Name: A → Z</option>
+                <option value="nameZA">Name: Z → A</option>
+                <option value="ratingHigh">Rating: High → Low</option>
+                <option value="ratingLow">Rating: Low → High</option>
+              </select>
+            </label>
+            <label class="control">
+              Per page:
+              <select id="pageSizeSelect">
+                <option value="6">6</option>
+                <option value="9" selected>9</option>
+                <option value="12">12</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <!-- Product Grid (rendered by JS) -->
+        <div id="productGrid" class="product-grid" aria-live="polite"></div>
+
+        <!-- pagination -->
+        <div id="pagination" class="pagination"></div>
+      </div>
+    </section>
+      <!-- products already here -->
+
+
+    <div class="product fade-in" data-price="30000" data-category="TV" data-rating="4.5">
+  <div class="product-media">
+    <img src="images/LED.avif" alt="LED TV">
+  </div>
+  <h3>LED TV</h3>
+  <p>Smart 4K HDR LED TV with immersive audio.</p>
+  <div class="product-foot">
+    <span class="price">₹30,000</span>
+    <button class="btn btn-3d success buyBtn">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product fade-in" data-price="8000" data-category="Appliances" data-rating="4.2">
+  <div class="product-media">
+    <img src="images/MICROWAVE OVEN.jpeg" alt="Microwave Oven">
+  </div>
+  <h3>Microwave Oven</h3>
+  <p>Compact microwave with auto-cook presets.</p>
+  <div class="product-foot">
+    <span class="price">₹8,000</span>
+    <button class="btn btn-3d success buyBtn">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product fade-in" data-price="25000" data-category="Appliances" data-rating="4.3">
+  <div class="product-media">
+    <img src="images/REFRIGERATOR.webp" alt="Refrigerator">
+  </div>
+  <h3>Refrigerator</h3>
+  <p>Energy-efficient double-door with fast cool.</p>
+  <div class="product-foot">
+    <span class="price">₹25,000</span>
+    <button class="btn btn-3d success buyBtn">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product fade-in" data-price="15000" data-category="Appliances" data-rating="4.1">
+  <div class="product-media">
+    <img src="images/WASHING MACHINE.webp" alt="Washing Machine">
+  </div>
+  <h3>Washing Machine</h3>
+  <p>Automatic washer with eco & quick modes.</p>
+  <div class="product-foot">
+    <span class="price">₹15,000</span>
+    <button class="btn btn-3d success buyBtn">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product fade-in" data-price="50000" data-category="Laptop" data-rating="4.8">
+  <div class="product-media">
+    <img src="images/LAPTOP.webp" alt="Laptop">
+  </div>
+  <h3>Laptop</h3>
+  <p>Thin & light performance for work and play.</p>
+  <div class="product-foot">
+    <span class="price">₹50,000</span>
+    <button class="btn btn-3d success buyBtn">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product fade-in" data-price="20000" data-category="Smartphone" data-rating="4.6">
+  <div class="product-media">
+    <img src="images/SMARTPHONE.webp" alt="Smartphone">
+  </div>
+  <h3>Smartphone</h3>
+  <p>Flagship camera with blazing fast processor.</p>
+  <div class="product-foot">
+    <span class="price">₹20,000</span>
+    <button class="btn btn-3d success buyBtn">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product fade-in" data-price="4000" data-category="Accessories" data-rating="4.0">
+  <div class="product-media">
+    <img src="images/HEADPHONE.webp" alt="Headphones">
+  </div>
+  <h3>Headphones</h3>
+  <p>Wireless ANC with deep bass and comfort.</p>
+  <div class="product-foot">
+    <span class="price">₹4,000</span>
+    <button class="btn btn-3d success buyBtn">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product fade-in" data-price="12000" data-category="Accessories" data-rating="4.4">
+  <div class="product-media">
+    <img src="images/SMARTWATCH.webp" alt="Smartwatch">
+  </div>
+  <h3>Smartwatch</h3>
+  <p>All-day health monitoring and GPS.</p>
+  <div class="product-foot">
+    <span class="price">₹12,000</span>
+    <button class="btn btn-3d success buyBtn">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product fade-in" data-price="35000" data-category="Appliances" data-rating="4.3">
+  <div class="product-media">
+    <img src="images/AIR CONDITIONER.webp" alt="Air Conditioner">
+  </div>
+  <h3>Air Conditioner</h3>
+  <p>Inverter split AC for efficient cooling.</p>
+  <div class="product-foot">
+    <span class="price">₹35,000</span>
+    <button class="btn btn-3d success buyBtn">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product fade-in" data-price="45000" data-category="Gaming" data-rating="4.7">
+  <div class="product-media">
+    <img src="images/GAMING CONSOLE.webp" alt="Gaming Console">
+  </div>
+  <h3>Gaming Console</h3>
+  <p>Next-gen 4K gaming, ultra-fast loading.</p>
+  <div class="product-foot">
+    <span class="price">₹45,000</span>
+    <button class="btn btn-3d success buyBtn">Add to Cart</button>
+  </div>
+</div>
+
+
+<div class="filters">
+  <label>
+    Category:
+    <select id="categoryFilter">
+      <option value="all">All</option>
+      <option value="TV">TV</option>
+      <option value="Laptop">Laptop</option>
+      <option value="Smartphone">Smartphone</option>
+      <option value="Appliances">Appliances</option>
+      <option value="Accessories">Accessories</option>
+    </select>
+  </label>
+
+  <label>
+    Max Price:
+    <input type="number" id="priceFilter" placeholder="e.g. 20000"/>
+  </label>
+
+  <label>
+    Min Rating:
+    <input type="range" id="ratingFilter" min="0" max="5" step="0.1" value="0"/>
+    <span id="ratingValue">0</span>★
+  </label>
+</div>
+<main>
+
+<!-- PRODUCT MODAL -->
+  <div id="productModal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button id="modalClose" class="modal-close">×</button>
+      <img id="modalImg" alt="Product image" />
+      <div class="modal-body">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <p><strong>Category:</strong> <span id="modalCat"></span></p>
+        <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+        <p><strong>Rating:</strong> <span id="modalRating"></span></p>
+        <button id="modalAddToCart" class="btn btn-3d success">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 VOLT-HUB. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
